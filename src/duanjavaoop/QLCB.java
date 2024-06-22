@@ -121,6 +121,23 @@ public class QLCB {
         return subAction;
     }
     
+    public static void timKiem() {
+        System.out.println("Nhập tên cần tìm: ");
+        Scanner sc = new Scanner(System.in).useDelimiter("\n");
+        String name = sc.next();
+        
+        for (int i = 0; i < lstCanBo.size(); i++) {
+            if (lstCanBo.get(i).hoTen.equals(name)) {
+                System.out.println(lstCanBo.get(i).hoTen);
+                System.out.println(lstCanBo.get(i).tuoi);
+                System.out.println(lstCanBo.get(i).gioiTinh);
+                System.out.println(lstCanBo.get(i).getDiaChi());
+            } else {
+                System.out.println("Không có cán bộ phù hợp");
+            }
+        }
+    }
+    
     
     public static void main(String[] args) {
         int action = 0;
@@ -131,7 +148,7 @@ public class QLCB {
                     them(subAction);
                     break;
                 case 2:
-                    // tim kiem
+                    timKiem();
                     break;
                 case 3:
                     xuat();
