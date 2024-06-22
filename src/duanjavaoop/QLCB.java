@@ -69,6 +69,37 @@ public class QLCB {
                 lstCanBo.add(ks);
             }
         }
+        
+        if (subAction == 3) {
+            System.out.println("Nhập số lượng nhân viên: ");
+            Scanner sc = new Scanner(System.in);
+            int number = sc.nextInt();
+            NhanVien nv = new NhanVien();
+
+            for (int i = 0; i < number; i++) {
+                System.out.println("Nhập họ tên: ");
+                String hoTen = sc.next();
+                nv.hoTen = hoTen;
+
+                System.out.println("Nhập tuổi: ");
+                int tuoi = sc.nextInt();
+                nv.tuoi = tuoi;
+
+                System.out.println("Nhập giới tính: ");
+                int gioiTinh = sc.nextInt();
+                nv.gioiTinh = gioiTinh;
+
+                System.out.println("Nhập địa chỉ: ");
+                String diaChi = sc.next();
+                nv.setDiaChi(diaChi);
+
+                System.out.println("Nhập công việc: ");
+                String congViec = sc.next();
+                nv.congViec = congViec;
+
+                lstCanBo.add(nv);
+            }
+        }
     }
     
     public static void xuat() {
