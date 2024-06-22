@@ -38,6 +38,37 @@ public class QLCB {
                 lstCanBo.add(cn);
             }
         }
+        
+        if (subAction == 2) {
+            System.out.println("Nhập số lượng kỹ sư: ");
+            Scanner sc = new Scanner(System.in);
+            int number = sc.nextInt();
+            KySu ks = new KySu();
+
+            for (int i = 0; i < number; i++) {
+                System.out.println("Nhập họ tên: ");
+                String hoTen = sc.next();
+                ks.hoTen = hoTen;
+
+                System.out.println("Nhập tuổi: ");
+                int tuoi = sc.nextInt();
+                ks.tuoi = tuoi;
+
+                System.out.println("Nhập giới tính: ");
+                int gioiTinh = sc.nextInt();
+                ks.gioiTinh = gioiTinh;
+
+                System.out.println("Nhập địa chỉ: ");
+                String diaChi = sc.next();
+                ks.setDiaChi(diaChi);
+
+                System.out.println("Nhập ngành đào tạo: ");
+                String nganhDaoTao = sc.next();
+                ks.nganhDaoTao = nganhDaoTao;
+
+                lstCanBo.add(ks);
+            }
+        }
     }
     
     public static void xuat() {
