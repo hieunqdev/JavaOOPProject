@@ -10,7 +10,7 @@ public class QLCB {
     public static void them(int subAction) {
         if (subAction == 1) {
             System.out.println("Nhập số lượng công nhân: ");
-            Scanner sc = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in).useDelimiter("\n");
             int number = sc.nextInt();
             CongNhan cn = new CongNhan();
 
@@ -41,7 +41,7 @@ public class QLCB {
         
         if (subAction == 2) {
             System.out.println("Nhập số lượng kỹ sư: ");
-            Scanner sc = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in).useDelimiter("\n");
             int number = sc.nextInt();
             KySu ks = new KySu();
 
@@ -72,7 +72,7 @@ public class QLCB {
         
         if (subAction == 3) {
             System.out.println("Nhập số lượng nhân viên: ");
-            Scanner sc = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in).useDelimiter("\n");
             int number = sc.nextInt();
             NhanVien nv = new NhanVien();
 
