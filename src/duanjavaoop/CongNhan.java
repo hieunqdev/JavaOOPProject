@@ -15,8 +15,4 @@ public class CongNhan extends CanBo{
         this.bac = bac;
     }
     
-    @Override
-    public String toString() {
-        return "tqeqkdhdk cong nahn";
-    }
 }

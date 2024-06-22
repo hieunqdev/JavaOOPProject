@@ -23,11 +23,6 @@ public class CanBo {
     public String getDiaChi() {
         return diaChi;
     }
-
-    @Override
-    public String toString() {
-        return "sjssjkkdajkdhadajk";
-    }
     
     
 }

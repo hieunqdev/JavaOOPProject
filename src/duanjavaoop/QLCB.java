@@ -104,12 +104,21 @@ public class QLCB {
     }
     
     public static void xuat() {
-        for (int i = 0; i < lstCanBo.size(); i++) {
-            System.out.println(lstCanBo.get(i).hoTen);
-            System.out.println(lstCanBo.get(i).tuoi);
-            System.out.println(lstCanBo.get(i).gioiTinh);
-            System.out.println(lstCanBo.get(i).getDiaChi());
-//            lstCanBo.get(i).toString();
+        for (CanBo cb : lstCanBo) {
+            System.out.println(cb.hoTen);
+            System.out.println(cb.tuoi);
+            System.out.println(cb.gioiTinh);
+            System.out.println(cb.getDiaChi());
+            
+            if (cb instanceof CongNhan) {
+                System.out.println(((CongNhan) cb).bac);
+            }
+            if (cb instanceof KySu){
+                System.out.println(((KySu) cb).nganhDaoTao);
+            }
+            if (cb instanceof NhanVien) {
+                System.out.println(((NhanVien) cb).congViec);
+            }
         }
     }
     
