@@ -9,12 +9,13 @@ public class QLCB {
     
     public static void them(int subAction) {
         if (subAction == 1) {
+//            System.out.println("lan 1");
             System.out.println("Nhập số lượng công nhân: ");
             Scanner sc = new Scanner(System.in).useDelimiter("\n");
             int number = sc.nextInt();
-            CongNhan cn = new CongNhan();
-
+            
             for (int i = 0; i < number; i++) {
+                CongNhan cn = new CongNhan();
                 System.out.println("Nhập họ tên: ");
                 String hoTen = sc.next();
                 cn.hoTen = hoTen;
@@ -43,9 +44,9 @@ public class QLCB {
             System.out.println("Nhập số lượng kỹ sư: ");
             Scanner sc = new Scanner(System.in).useDelimiter("\n");
             int number = sc.nextInt();
-            KySu ks = new KySu();
-
+            
             for (int i = 0; i < number; i++) {
+                KySu ks = new KySu();
                 System.out.println("Nhập họ tên: ");
                 String hoTen = sc.next();
                 ks.hoTen = hoTen;
@@ -74,9 +75,9 @@ public class QLCB {
             System.out.println("Nhập số lượng nhân viên: ");
             Scanner sc = new Scanner(System.in).useDelimiter("\n");
             int number = sc.nextInt();
-            NhanVien nv = new NhanVien();
-
+            
             for (int i = 0; i < number; i++) {
+                NhanVien nv = new NhanVien();
                 System.out.println("Nhập họ tên: ");
                 String hoTen = sc.next();
                 nv.hoTen = hoTen;
@@ -108,6 +109,7 @@ public class QLCB {
             System.out.println(lstCanBo.get(i).tuoi);
             System.out.println(lstCanBo.get(i).gioiTinh);
             System.out.println(lstCanBo.get(i).getDiaChi());
+//            lstCanBo.get(i).toString();
         }
     }
     
